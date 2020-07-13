@@ -26,7 +26,7 @@ Route::get('/', function () {
 #テストhellopage
 
 #Route::get('/hello/{msg}',function ($msg) {
-Route::get('/hello/{msg?}',function ($msg='no messge.') {
+/* Route::get('/hello/{msg?}',function ($msg='no messge.') {
 $html = <<<EOF
 <html>
 <head>
@@ -46,4 +46,6 @@ h1 { font-size:100pt; text-align:right; color:#eee;
 EOF;
 
     return $html;
-});
+}); */
+
+Route::get('hello','HelloController@index');
