@@ -56,6 +56,8 @@ Route::get('hello/other','HelloController@other'); */
 
 #Route::get('hello', 'HelloController@index');
 
-Route::get('hello', function() {
+/* Route::get('hello', function() {
     return view('hello.index');
-});
+}); */
+
+Route::get('hello', 'HelloController3rd@index');
