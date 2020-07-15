@@ -61,3 +61,4 @@ Route::get('hello/other','HelloController@other'); */
 }); */
 
 Route::get('hello', 'HelloController3rd@index');
+Route::post('hello', 'HelloController3rd@post');
