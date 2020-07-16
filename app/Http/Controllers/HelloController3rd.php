@@ -8,19 +8,8 @@ class HelloController3rd extends Controller
 {
     public function index()
     {
-        $data = [
-            'msg'=>'お名前を入力してください。',
-        ];
-        return view('hello.index', $data);
-    }
-
-    public function post(Request $request)
-    {
-        $msg = $request->msg;
-        $data = [
-            'msg'=>'こんにちは、' . $msg . 'さん！',
-        ];
-        return view('hello.index', $data);
+        $data = ['one', 'two', 'three', 'four', 'five'];
+        return view('hello.index', ['data'=>$data]);
     }
 }
 
@@ -34,4 +23,29 @@ class HelloController3rd extends Controller
             'id'=>$request->id
         ];
         return view('hello.index', $data);
+    } */
+
+
+
+    /*     public function index()
+    {
+        $data = [
+            'msg'=>'お名前を入力してください。',
+        ];
+        return view('hello.index', $data);
+    }
+
+    public function post(Request $request)
+    {
+        $msg = $request->msg;
+        $data = [
+            'msg'=>'こんにちは、' . $msg . 'さん！',
+        ];
+        return view('hello.index', $data);
+    } */
+
+
+    /* public function post(Request $request)
+    {
+        return view('hello.index', ['msg'=>$request->msg]);
     } */
